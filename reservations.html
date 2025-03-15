@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pacific Trails Resort - Resrvations</title>
-        <meta charset="UTF-8">
+        <title>Pacific Trails Resort - Reservations</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="css/pacific.css">
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div id="wrapper">
             <header>
-                <h1>ReservationsPacific Trails Resort</h1>
+                <h1>Pacific Trails Resort</h1>
             </header>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="yurts.html">Yurts</a>
-                <a href="activities.html">Activities</a>
-                <a href="reservations.html">Reservations</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="yurts.html">Yurts</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
             </nav>
             <main>
                 <h2>Reservations at Pacific Trails</h2>
-                <h3>Contact us Today!</h3>
-                <form method="post" action="http://webdevbasics.net/scripts/pacific.php">
-                    <p>Mandatory feild are marked with an asterisk<span class="required">*</span></p>
+                <h3>Contact Us Today!</h3>
+                <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+                    <p>Mandatory fields are marked with an asterisks (<span class="required">*</span>)</p>
                     <label for="myFName"><span class="required">*</span>First Name:</label>
                     <input type="text" id="myFName" name="myFName" required>
-                    
+    
                     <label for="myLName"><span class="required">*</span>Last Name:</label>
                     <input type="text" id="myLName" name="myLName" required>
     
@@ -32,7 +33,7 @@
                     <input type="email" id="myEmail" name="myEmail" required>
     
                     <label for="myPhone">Phone:</label>
-                    <input type="tel" id="myPhone" name="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" placeholder="e.g 123-456-7890">
+                    <input type="tel" id="myPhone" name="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="e.g. 416-123-1234">
     
                     <label for="myArrival">Arrival:</label>
                     <input type="date" id="myArrival" name="myArrival">
@@ -45,6 +46,7 @@
     
                     <input type="submit" value="Submit Form">
                     <input type="reset" value="Reset Form">
+    
                 </form>
                 <div id="contact">
                     Pacific Trails Resort<br>
@@ -54,7 +56,7 @@
                 </div>
             </main>
             <footer>
-                Copyright &copy; 2025 Pacific Trails Resort.
+                Copyright &copy; 2025 Pacific Trails Resort
             </footer>
         </div>
     </body>
